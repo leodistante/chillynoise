@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chillynoise</title>
+</head>
+<body>
+    <header class="header" id="home">
+       <img src="icons/bars-solid.svg" class="hamburger"> 
+       <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#service">Free Test</a>
+            <a href="#contacto">About us</a>
+            <a href="#contacto">Contact</a>
+       </nav>
+       <div class="container head">
+            <h1 class="title">Healing sounds for your mind</h1>
+            <p class="copy">Play the sounds you need and create the mood you deserve</p>
+       </div>
+    </header>
+    <main>
+        <section class="container-service" id="service">
+            <div class="container-music">
+                <h2 class="subtitle">Our Sounds</h2>
+                <div class="sounds">
+                    <div>
+                        <audio src="sounds/Birds.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Birds</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                    <div>
+                        <audio src="sounds/Bowl.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Singing Bowl</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                    <div>
+                        <audio src="sounds/Fireplace.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Fireplace</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                    <div>
+                        <audio src="sounds/Rain.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Rain</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                    <div>
+                        <audio src="sounds/Waves.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Ocean</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                    <div>
+                        <audio src="sounds/Wind.mp3" type = "audio/mpeg"></audio>
+                        <p class="sound-name">Wind</p>
+                        <button onclick="playAudio(this)" class="play" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Chillynoise</h2>
+                <p>Good noise for good times</p>
+            </div>
+            <div class="social-media">
+                <a href="" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="social-media-icon"><i class="fab fa-instagram"></i></a>
+                <a href="" class="social-media-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <script src="script/music.js"></script>
+    <script src="script/menu.js"></script>
+</body>
+</html>
